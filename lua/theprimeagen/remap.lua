@@ -55,3 +55,5 @@ vim.keymap.set("n", "<leader>mr2", "<cmd>CellularAutomaton game_of_life<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+-- change nvim pwd to currently open files dir
+vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
