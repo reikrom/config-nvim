@@ -57,3 +57,5 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 -- change nvim pwd to currently open files dir
 vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
+
+vim.keymap.set("n", "<leader>rlog", "i console.log(`%cRei: $1`, 'background: limegreen color: white; font-size: 18px', $1)<C-c><C-v>:s/$1/");
