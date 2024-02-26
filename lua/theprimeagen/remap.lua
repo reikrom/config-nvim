@@ -45,8 +45,10 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- make the file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+-- make the file executable
+vim.keymap.set("n", "<leader><leader>w", "<cmd>:w<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.dotfiles/nvim/.config/nvim/lua/theprimeagen/packer.lua<CR>");
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/theprimeagen/packer.lua<CR>");
 -- when thinking gets thought, relax with mr1 and mr2
 vim.keymap.set("n", "<leader>mr1", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>mr2", "<cmd>CellularAutomaton game_of_life<CR>");
