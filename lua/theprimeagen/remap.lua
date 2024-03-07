@@ -61,3 +61,6 @@ end)
 vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
 
 vim.keymap.set("n", "<leader>rlog", "i console.log(`%cRei: $1`, 'background: limegreen color: white; font-size: 18px', $1)<C-c><C-v>:s/$1/");
+vim.keymap.set("n", "<leader>ee", "i if err !== err {<CR>return err<CR>}<CR><C-c>");
+
+
