@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# add this file to ~/.local/bin
+
 # add this to .bashrc or .zhrc
 # bindkey -s ^f "tmux-sessionizer\n"
 
