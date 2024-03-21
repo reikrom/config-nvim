@@ -46,7 +46,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- make the file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 -- make the file executable
-vim.keymap.set("n", "<leader><leader>w", "<cmd>:w<CR>", { silent = true })
+-- vim.keymap.set("n", "<leader><leader>w", "<cmd>:w<CR>", { silent = true })
+ vim.keymap.set("n", "<C-s>", "<cmd>:w<CR>", { silent = true })
 
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/reikrom/packer.lua<CR>");
 -- when thinking gets thought, relax with mr1 and mr2
