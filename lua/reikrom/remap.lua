@@ -61,7 +61,9 @@ end)
 -- change nvim pwd to currently open files dir
 vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
 
-vim.keymap.set("n", "<leader>rlog", "i console.log(`%cRei: $1`, 'background: limegreen color: white; font-size: 18px', $1)<C-c><C-v>:s/$1/");
+vim.keymap.set("n", "<leader>rlog", "i console.log(`%cRei: changeMe`, 'background: limegreen color: white; font-size: 18px', changeMe)<CR>");
 vim.keymap.set("n", "<leader>ee", "i if err !== err {<CR>return err<CR>}<CR><C-c>");
 
 
+-- run prettier on staged files
+vim.keymap.set("n", "<leader>pw", "<cmd>!npx prettier --write $(git diff --cached --name-only --diff-filter=ACMRTUXB | xargs)", { silent = true })
