@@ -66,4 +66,4 @@ vim.keymap.set("n", "<leader>ee", "i if err !== err {<CR>return err<CR>}<CR><C-c
 
 
 -- run prettier on staged files
-vim.keymap.set("n", "<leader>pw", "<cmd>!npx prettier --write $(git diff --cached --name-only --diff-filter=ACMRTUXB | xargs)", { silent = true })
+vim.keymap.set("n", "<leader>pw", "<cmd>!npx prettier --write $(git diff --cached --name-only --diff-filter=ACMRTUXB | xargs)<CR>", { silent = true })
