@@ -1,6 +1,10 @@
 require('telescope').setup{defaults = {
   path_display = { "truncate" },
-  dynamic_preview_title = true
+  dynamic_preview_title = true,
+  file_ignore_patterns = {
+    "node_modules",
+    "dist",
+  }
  }
 }
 
