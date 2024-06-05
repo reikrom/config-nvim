@@ -3,6 +3,7 @@
 
 # add this to .bashrc or .zhrc
 # bindkey -s ^f "tmux-sessionizer\n"
+# bindkey -s ^n "nvim .\n"
 
 if [[ $# -eq 1 ]]; then
     selected=$1

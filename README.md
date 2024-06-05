@@ -8,3 +8,8 @@ in case packer installs extensions with the wrong line ending, run this command
 ```
 find /home/rei/.local/share/nvim/site/pack/packer/start/ -type f -name "*.vim" -exec vim -c ':w ++ff=unix' -c ':q' {} \;
 ```
+[install packer](https://github.com/wbthomason/packer.nvim)
+`brew install lua`
+`brew install fzf`
+
+
