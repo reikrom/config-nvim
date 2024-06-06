@@ -11,5 +11,6 @@ find /home/rei/.local/share/nvim/site/pack/packer/start/ -type f -name "*.vim" -
 [install packer](https://github.com/wbthomason/packer.nvim)
 `brew install lua`
 `brew install fzf`
+`brew install ripgrep`
 
 
