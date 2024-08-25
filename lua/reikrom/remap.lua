@@ -61,8 +61,10 @@ end)
 -- change nvim pwd to currently open files dir
 vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
 
-vim.keymap.set("n", "<leader>rlog", "i console.log(`%cRei: changeMe`, 'background: limegreen color: white; font-size: 18px', changeMe)<CR>");
-vim.keymap.set("n", "<leader>ee", "i if err !== err {<CR>return err<CR>}<CR><C-c>");
+-- for JS
+vim.keymap.set("n", "<leader>rl", "i console.log('rei ");
+-- for Go
+vim.keymap.set("n", "<leader>ee", "i if err != nil {<CR>return err<CR>}<CR><C-c>");
 
 
 -- run prettier on staged files
