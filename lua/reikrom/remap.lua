@@ -62,7 +62,7 @@ end)
 vim.keymap.set("n", '<leader>cd', [[:cd %:p:h<CR>:pwd<CR>"<cmd>%:p:h<CR>:pwd<CR>]])
 
 -- for JS
-vim.keymap.set("n", "<leader>rlg", "iconsole.log('rei ");
+vim.keymap.set("n", "<leader>rlg", "oconsole.log('rei ");
 -- for Go
 vim.keymap.set("n", "<leader>ee", "o if err != nil {<CR>return err<CR>}<CR><C-c>kk$");
 
