@@ -33,6 +33,7 @@ return {
         return args[1]
       end
 
+       -- https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
 
 
       ls.filetype_extend("javascript", { "jsdoc" })
